@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>IMAGE SLIDER</title>
+    <!-- <link rel="stylesheet" href="image_slider2.css"> -->
+    <style>
+    body{
+      margin:0;
+      padding: 0;
+      background-color: black;
+    }
+
+    #slider{
+      width :800px;
+      height: 500px;
+      background :url(desk.png);
+      margin: 100px auto;
+      animation: slide 20s infinite;
+    }
+
+    @keyframes slide {
+      25%{
+        background: url(desk2.png);
+      }
+      50%{
+        background: url(desk3.png);
+      }
+      75%{
+        background: url(desk2.png);
+      }
+      100%{
+        background: url(desk3.png);
+      }
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="slider">
+    </div>
+  </body>
+</html>
